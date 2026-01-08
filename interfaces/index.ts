@@ -29,7 +29,7 @@ interface Offers {
 }
 
 export interface PropertyProps {
-    id: number;
+  id: number;
   name: string;
   address: Address;
   rating: number;
