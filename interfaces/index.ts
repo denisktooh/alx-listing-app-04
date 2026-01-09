@@ -28,6 +28,13 @@ interface Offers {
   occupants: string;
 }
 
+export interface Reviews {
+  id: number;
+  reviewerName: string;
+  rating: number;
+  comment: string;
+}
+
 export interface PropertyProps {
   id: number;
   name: string;
@@ -38,4 +45,9 @@ export interface PropertyProps {
   offers: Offers;
   image: Url;
   discount: string;
+  reviews?: Reviews[];
+}
+
+export interface ReviewSectionProps {
+  propertyId: number;
 }
